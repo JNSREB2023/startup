@@ -8,3 +8,4 @@ def(main):
   for i in range(len(lst_1)):
     i = lst[i] + 6
 return lst_1
+this is to see how to merge conflicts
