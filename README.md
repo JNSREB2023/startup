@@ -4,5 +4,5 @@ Whenever I am searching for a dinner recipe I come across thousands on the inter
 
 ## Design
 Below is a rough sketch for the concept design of the website.
-![](/Users/rebekahjensen/Documents/cs260/startup/rate_my_recipe_design-2.jpg)
+![](rate_my_recipe_design-2.jpg)
 
