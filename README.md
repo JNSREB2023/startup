@@ -20,10 +20,10 @@ Below is a rough sketch for the concept design of the website.
 
 I am going to use the required technologies in the following ways.
 
-     - **HTML** - Uses correct HTML structure for application. There will be 4 HTML pages for login, create login, homepage, veiwing/rating recipes. Hyperlinks that lead to each page
-     - **CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast. 
-     - **React** - Provides login, option to create recipes, opeion to view others inputs and rate them.
-     - **Service** - Backend service with endpoints for:
-        - login
-        - 
+- **HTML** - Uses correct HTML structure for application. There will be 4 HTML pages for login, create login, homepage, veiwing/rating recipes. Hyperlinks that lead to each page
+- **CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast. 
+- **React** - Provides login, option to create recipes, opeion to view others inputs and rate them.
+- **Service** - Backend service with endpoints for:
+    - login
+    - 
 
