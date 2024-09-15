@@ -22,8 +22,13 @@ I am going to use the required technologies in the following ways.
 
 - **HTML** - Uses correct HTML structure for application. There will be 4 HTML pages for login, create login, homepage, veiwing/rating recipes. Hyperlinks that lead to each page
 - **CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast. 
+- **JavaScript** - Provides login, choice display, applying reviews, displaying other users recipes and reveiws. 
 - **React** - Provides login, option to create recipes, opeion to view others inputs and rate them.
 - **Service** - Backend service with endpoints for:
     - login
-    - 
+    - Submitting recipes
+    - retrieving ratings
+    - retrieving recipes
+- **DB/Login** - Stores useres, recipes, and ratings. Register and login users. Profiles and credintials stored in database.
+- **WebSocket** - As users input the recipes they are broadcasted to other users.
 
