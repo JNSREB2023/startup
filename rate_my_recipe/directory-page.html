@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rate My Recipe</title>
 </head>
-<header>
-    <h2>🍲 Rate My Recipe 🍴</h2>
-</header>
+<body>
+    <header>
+        <h2>🍲 Rate My Recipe 🍴</h2>
+        <nav>
+            <a href='update-login.html'>Profile</a> <!-- Clickable Profile Link -->
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Left Section: List of Recipes -->
+        <section class="recipes">
+            <h2>Rate Others Recipes!</h2>
+            <ul>
+                <li><a href="/rate-recipe/lasagna">John: Lasagna</a></li>
+                <li><a href="/rate-recipe/alfredo">Alice: Alfredo</a></li>
+                <li><a href="/rate-recipe/steak-salad">Josh: Steak Salad</a></li>
+                <li><a href="/rate-recipe/orange-chicken">Carson: Orange Chicken</a></li>
+            </ul>
+        </section>
+
+        <!-- Right Section: Add New Recipe Form -->
+        <section class="add-recipe">
+            <h2>Add New Recipe</h2>
+            <form action="/add-recipe" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="6" required></textarea>
+
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

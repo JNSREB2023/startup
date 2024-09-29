@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>🍲 Rate My Recipe 🍴</h2>
+        </header>
+        <header>
+            <h2>Update Information</h2>
+        </header>
+        <main>
+            <form action="/submit-account" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us something about yourself..." required></textarea>
+
+                <button type="submit"oneclick="location.href='directory-page.html'">Update</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
