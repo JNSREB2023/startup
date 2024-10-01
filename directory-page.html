@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate My Recipe</title>
+</head>
+<body>
+    <header>
+        <h2>🍲 Rate My Recipe 🍴</h2>
+        <nav>
+            <menu>
+              <li><a href="create-login.html">Create login</a></li>
+              <li><a href="directory-page.html">Homepage</a></li>
+              <li><a href="rating-page.html">Rate a Recipe</a></li>
+              <li><a href="update-login.html">Update Login</a></li>
+              <li><a href="recipe-data.html">Recipes</a></li>
+            </menu>
+          </nav>
+        <nav>
+            <div>
+                <button type="button" onclick="location.href='update-login.html'">Profile</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <!-- Left Section: List of Recipes -->
+        <section class="recipes">
+            <h2>Rate Others Recipes!</h2>
+            <p>I think this requires additional knowledge of java or other code of how to make this
+                section work, I'm unsure right now so this is a placeholder.
+                <div>
+                    <button type="button" onclick="location.href='rating-page.html'">Rate!</button>
+                </div>
+        
+            </p>
+        </section>
+
+        <!-- Right Section: Add New Recipe Form -->
+        <section class="add-recipe">
+            <h2>Add New Recipe</h2>
+            <form action="/add-recipe" method="POST">
+                <p>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </p>
+            <p><label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+            </p>
+                
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="6" required></textarea>
+
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <hr />
+        <span class="text-reset">My Github</span>
+        <br />
+        <a href="https://github.com/JNSREB2023/startup.git">GitHub</a>
+      </footer>
+</body>
+</html>
