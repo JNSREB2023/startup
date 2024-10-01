@@ -35,15 +35,15 @@ I am going to use the required technologies in the following ways.
 ## HTML Deliverable
 For thus deliverable I built a rough structure of my application using HTML
 
-[] HTML pages - I created 6 pages
+[ ] HTML pages - I created 6 pages
 - index / login
 - homepage, named it directory.html
 - create user 
 - update user information
 - rating page
 - database where all the recipes will go
-[] Links - In each of the pages contain various links to the other html pages
-[] Test - there are text boxes for bio's, comments, names, ingredients, and instructions
-[] Images - I did not have any images that I wanted to implement at this time. Although I am thinking about adding a place where users upload a picture of the recipe.
-[] DB/Login - Input box and submit button for login. The rating section represents data pulled from 'add recipe section'
-[] WebSocket - By displaying other recipes other input to the database this allows other to pull the info from the server. 
+[ ] Links - In each of the pages contain various links to the other html pages
+[ ] Test - there are text boxes for bio's, comments, names, ingredients, and instructions
+[ ] Images - I did not have any images that I wanted to implement at this time. Although I am thinking about adding a place where users upload a picture of the recipe.
+[ ] DB/Login - Input box and submit button for login. The rating section represents data pulled from 'add recipe section'
+[ ] WebSocket - By displaying other recipes other input to the database this allows other to pull the info from the server. 
