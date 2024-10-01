@@ -21,6 +21,11 @@
         details of the post, and rate it.
     </p>
     <p>
+        <section class="add-rating">
+        <h3>Input Rating:</h3>
+        <form action="/add-rating" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"/>
         <div class="star-rating">
             <input type="radio" id="star5" name="rating" value="5" />
             <label for="star5" title="5 stars">&#9733;</label>
@@ -33,6 +38,10 @@
             <input type="radio" id="star1" name="rating" value="1" />
             <label for="star1" title="1 star">&#9733;</label>
         </div>
+        <label for="name">Comment:</label>
+        <textarea id="comment" name="comment" rows="6"required></textarea>
+        <button type="submit">Submit</button>
+        </form>
     </p>
     <p>
         this is the start logic of the star rating, needs more work
