@@ -9,3 +9,6 @@
 - [ ] task 3
 
 :sweat_smile:
+
+## HTML Notes for Startup:
+* Need to figure out how to showw the databas information and have users input the recipe. I think I have a small grasp on the ideology, but need to do more research on this.
