@@ -1,68 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rate My Recipe</title>
-</head>
-<body>
-    <header>
-        <h2>🍲 Rate My Recipe 🍴</h2>
-        <nav>
-            <menu>
-              <li><a href="create-login.html">Create login</a></li>
-              <li><a href="directory-page.html">Homepage</a></li>
-              <li><a href="rating-page.html">Rate a Recipe</a></li>
-              <li><a href="update-login.html">Update Login</a></li>
-              <li><a href="recipe-data.html">Recipes</a></li>
-            </menu>
-          </nav>
-    </header>
-    <nav>
-        <div class="button">
-            <button type="button" onclick="location.href='directory-page.html'">Back</button>
-            <button type="button" onclick="location.href='update-login.html'">Profile</button>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="rating-page.css"/>
+        <title>Rate a Recipe</title>
+    </head>
+    <body>
+        <div class="d-flex flex-column min-vh-100"> <!-- Flex container for full height -->
+            <div class="topnav">
+                <a href="index.html" class="active">Rate My Recipe</a>
+    
+                <!-- Hamburger menu icon -->
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+    
+                <!-- Links displayed in a block for vertical layout -->
+                <div id="myLinks">
+                    <a href="create-login.html">Create login</a>
+                    <a href="directory-page.html">Homepage</a>
+                    <a href="rating-page.html">Rate a Recipe</a>
+                    <a href="update-login.html">Update Login</a>
+                    <a href="recipe-data.html">Recipes</a>  
+                </div>
+            </div>
 
-    <p>
-        This is where a recipie will go, where a user can read the 
-        details of the post, and rate it.
-    </p>
-    <p>
-        <section class="add-rating">
-        <h3>Input Rating:</h3>
-        <form action="/add-rating" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name"/>
-        <div class="star-rating">
-            <input type="radio" id="star5" name="rating" value="5" />
-            <label for="star5" title="5 stars">&#9733;</label>
-            <input type="radio" id="star4" name="rating" value="4" />
-            <label for="star4" title="4 stars">&#9733;</label>
-            <input type="radio" id="star3" name="rating" value="3" />
-            <label for="star3" title="3 stars">&#9733;</label>
-            <input type="radio" id="star2" name="rating" value="2" />
-            <label for="star2" title="2 stars">&#9733;</label>
-            <input type="radio" id="star1" name="rating" value="1" />
-            <label for="star1" title="1 star">&#9733;</label>
+            <div class="container mt-5 flex-grow-1 d-flex justify-content-between flex-wrap">
+                <!-- Recipe Box -->
+             <div class="recipe-box p-4">
+                    <h2>Recipe Details</h2>
+                    <p>This is where the details of a recipe will go, showing the name, ingredients, and instructions.</p>
         </div>
-        <label for="name">Comment:</label>
-        <textarea id="comment" name="comment" rows="6"required></textarea>
-        <button type="submit">Submit</button>
-        </form>
-    </p>
-    <p>
-        this is the start logic of the star rating, needs more work
-    </p>
+        <div class="rating-box p-4">
+            <section class="add-rating">
+                <h3>Input Rating:</h3>
+                <form action="/add-rating" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control mb-2" />
 
-    <footer>
-        <hr />
-        <span class="text-reset">My Github</span>
-        <br />
-        <a href="https://github.com/JNSREB2023/startup.git">GitHub</a>
-      </footer>
-       
+                    <!-- Star Rating -->
+                    <div id="full-stars-example-two">
+                        <div class="rating-group">
+                            <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                            
+                            <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                            <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            
+                            <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                            <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            
+                            <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                            <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            
+                            <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                            <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                            
+                            <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                            <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                        </div>
+                        <p class="desc" style="font-family: sans-serif; font-size:0.9rem"></p>
+                    </div>
+
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" class="form-control mb-3" required></textarea>
+
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+        <footer class="footer">
+            <a href="https://github.com/JNSREB2023/startup.git">GitHub</a>
+        </footer>
+
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script>
+          function toggleMenu() {
+              var links = document.getElementById("myLinks");
+              if (links.style.display === "block") {
+                  links.style.display = "none";
+              } else {
+                  links.style.display = "block";
+              }
+          }
+      </script> 
     </body>
 </html>
 

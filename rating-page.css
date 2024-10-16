@@ -1,0 +1,160 @@
+* {
+    font-family: 'GFS Didot';
+}
+
+html, body {
+    height: 100%;
+    background-color: #f7e7ca;
+    margin: 0;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.min-vh-100 {
+    min-height: calc(100vh - 60px); /* Ensure the container takes up full height */
+}
+
+.topnav {
+    background-color: #9D9167; /* Match color of Rate My Recipe link */
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: block; /* Display links in a block layout */
+}
+
+.topnav a {
+    color: #744e25;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block; /* Stack links vertically */
+}
+
+.topnav a.icon {
+    background: #e8d1a7;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #feebc6;
+    color: #84592b;
+}
+
+.active {
+    background-color: #e8d1a7;
+    color: #84592b;
+}
+
+.footer {
+    background-color: #743014;
+    text-align: right; /* Center text */
+    padding: 1em;
+    margin-top: 1.5in;
+    font-size: 20px;
+    width: 100%; /* Ensure footer takes full width */
+    position: relative;
+    left: 0%;
+    bottom: 0;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #84592b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.footer a {
+    color: white; 
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+    .recipe-box, .rating-box {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space between stacked boxes */
+    }
+}
+
+.recipe-box, .rating-box {
+    background-color: #9D9167;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 48%; /* Take up 48% of the space on larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: white; 
+}
+
+.btn-primary {
+    padding: 10px 15px;
+    background-color: #84592b;
+    color: white;
+    margin-top: 10px; 
+}
+
+
+
+
+#full-stars-example-two {
+    .rating-group {
+        display: inline-flex;
+    }
+
+    .rating__icon {
+        pointer-events: none;
+    }
+
+    .rating__input {
+        position: absolute !important;
+        left: -9999px !important;
+    }
+
+    .rating__input--none {
+        display: none;
+    }
+
+    .rating__label {
+        cursor: pointer;
+        padding: 0 0.1em;
+        font-size: 2rem; /* Default size */
+    }
+
+    .rating__icon--star {
+        color: orange;
+    }
+
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+        color: #ddd;
+    }
+
+    .rating-group:hover .rating__label .rating__icon--star {
+        color: orange;
+    }
+
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+        color: #ddd;
+    }
+
+    /* Media queries for responsive design */
+    @media (max-width: 768px) {
+        .rating__label {
+            font-size: 1.5rem; /* Adjust size for tablets */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .rating__label {
+            font-size: 1rem; /* Smaller size for mobile phones */
+        }
+    }
+}
+
