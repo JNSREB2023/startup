@@ -33,7 +33,7 @@ I am going to use the required technologies in the following ways.
 - **WebSocket** - As users input the recipes they are broadcasted to other users.
 
 ## HTML Deliverable
-For thus deliverable I built a rough structure of my application using HTML
+For this deliverable I built a rough structure of my application using HTML
 
 - [x] HTML pages - I created 6 pages
     - index / login
@@ -48,3 +48,14 @@ For thus deliverable I built a rough structure of my application using HTML
 - [ ] Images - I did not have any images that I wanted to implement at this time. Although I am thinking about adding a place where users upload a picture of the recipe.
 - [x] DB/Login - Input box and submit button for login. The rating section represents data pulled from 'add recipe section'
 - [x] WebSocket - By displaying other recipes other input to the database this allows other to pull the info from the server. 
+
+## CSS deliverable
+
+For this deliverable I properly styled the application into its final appearance. I am still working on a few pages but the bulk of it is finished.
+
+- [x] **Header, footer, and main content body**
+- [x] **Navigation elements** - I made a hamburger navigation drop down menu, it has links to the various pages.
+- [x] **Responsive to window resizing** - My app conforms to different window sizes. 
+- [x] **Application elements** - Used good contrast and whitespace
+- [x] **Application text content** - Consistent fonts
+- [ ] **Application images** - Styled images on a few different pages.
