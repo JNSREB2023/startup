@@ -58,4 +58,4 @@ For this deliverable I properly styled the application into its final appearance
 - [x] **Responsive to window resizing** - My app conforms to different window sizes. 
 - [x] **Application elements** - Used good contrast and whitespace
 - [x] **Application text content** - Consistent fonts
-- [ ] **Application images** - Styled images on a few different pages.
+- [x] **Application images** - Styled images on a few different pages.
